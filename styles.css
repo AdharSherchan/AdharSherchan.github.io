@@ -1,0 +1,63 @@
+/* Setting the background for the entire website */
+    body{
+        background-color: white;
+        color: black;
+        background-size: cover;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 0; 
+    }
+
+/* For Navigation Bar */
+    nav{
+        text-align: right;
+        font-size: 17px;
+        padding: 14px 16px;
+        background-color: rgb(245, 234, 220);
+        width: auto;
+    }
+
+    a{
+        color: #000;
+    }
+
+/* For Accordion */
+    .accordion {
+        max-width: 500px;
+        border: 1px solid #000;
+        border-bottom: none;
+    }
+
+    .accordion:last-child{
+        border-bottom: 1px solid #000;
+    }
+
+    .accordion-header {
+        display: flex;
+        padding: 16px;
+        cursor: pointer;
+        background-color: rgb(245, 234, 220);
+    }
+
+    .accordion-title {
+        flex: 1;
+    }
+
+    .accordion-icon {
+        width: 16px;
+    }
+
+    .accordion-content {
+        padding: 16px;
+    }
+
+    .accordion-content {
+        display: none;
+    }
