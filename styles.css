@@ -9,7 +9,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: rgb(245, 234, 220);
+        background-color:white;
+    }
+
+    .headercontainer{
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
     }
 
     .myname {
@@ -40,7 +47,7 @@
   
       .topnav {
         overflow: hidden;
-        background-color: rgb(245, 234, 220);
+        background-color: white;
         position: relative; 
       }
   
@@ -58,11 +65,57 @@
       }
   
       .topnav a:hover {
-        background-color: rgb(116, 178, 255);
-        color: white;
+        background-color: rgb(245, 234, 220);
+        color: blue;
       }
  
 
+/* ABOUT ME PAGE*/
+      .bigbox{
+        border: none;
+        background-color: rgb(245, 234, 220);
+        float: left;
+        position: relative;
+        width: 45%;
+        padding-bottom: 60%;
+        margin-top: none;
+      }
+      .smallbox {
+        border: none;
+        background-color: rgb(255, 243, 229);
+        position: absolute;
+        float: right;
+        width: 30%; 
+        padding-bottom: 5%; 
+        margin-left: 25%;
+        margin-top: 10%;
+      }
+      .circular-container {
+        width: 250px; /* Adjust the size of the circular container */
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 15%;
+        margin-left: 25%;/* Center the circular container */
+        position: relative;
+      }
+      .circular-image {
+        display: block;
+        width: 250px;
+        height: 250px;
+        object-fit: cover; 
+        border-radius: 50%;
+      }
+      .introcard{
+        margin-top: 10%;
+        margin-left: 5%;
+        text-align: center;
+        font-size: 25px;
+        color: black;
+        font-family: Georgia, serif;
+      }
+
+/* EXPERIENCE PAGE*/
 /* For Accordion */
     .accordion {
         max-width: 500px;
