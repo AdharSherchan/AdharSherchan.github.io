@@ -9,13 +9,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: rgb(245, 234, 220);
     }
 
-    h1 {
-        margin: 0; 
+    .myname {
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 25px;
+        color: black;
+        font-family: Georgia, serif;
+        text-decoration: none;
     }
 
 /* For Navigation Bar */
+
+    /* For now
     nav{
         text-align: right;
         font-size: 17px;
@@ -23,10 +32,36 @@
         background-color: rgb(245, 234, 220);
         width: auto;
     }
-
-    a{
-        color: #000;
-    }
+    */
+    nav{
+        width: auto;
+        text-align: right;
+      }
+  
+      .topnav {
+        overflow: hidden;
+        background-color: rgb(245, 234, 220);
+        position: relative; 
+      }
+  
+      .topnav #myLinks {
+        display: none;
+      }
+  
+      .topnav a {
+        float: left; /*float left makes the elements symetrical or else they will be not*/
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+  
+      .topnav a:hover {
+        background-color: rgb(116, 178, 255);
+        color: white;
+      }
+ 
 
 /* For Accordion */
     .accordion {
