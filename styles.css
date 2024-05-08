@@ -31,15 +31,6 @@
 
 /* For Navigation Bar */
 
-    /* For now
-    nav{
-        text-align: right;
-        font-size: 17px;
-        padding: 14px 16px;
-        background-color: rgb(245, 234, 220);
-        width: auto;
-    }
-    */
     nav{
         width: auto;
         text-align: right;
@@ -131,35 +122,115 @@
 
 /* EXPERIENCE PAGE*/
 /* For Accordion */
-    .accordion {
-        max-width: 500px;
-        border: 1px solid #000;
-        border-bottom: none;
-    }
+      .accordion {
+          max-width: 500px;
+          border: 1px solid #000;
+          border-bottom: none;
+      }
 
-    .accordion:last-child{
-        border-bottom: 1px solid #000;
-    }
+      .accordion:last-child{
+          border-bottom: 1px solid #000;
+      }
 
-    .accordion-header {
+      .accordion-header {
+          display: flex;
+          padding: 16px;
+          cursor: pointer;
+          background-color: rgb(245, 234, 220);
+      }
+
+      .accordion-title {
+          flex: 1;
+      }
+
+      .accordion-icon {
+          width: 16px;
+      }
+
+      .accordion-content {
+          padding: 16px;
+      }
+
+      .accordion-content {
+          display: none;
+      }
+
+
+/* Footer with icons */
+
+      .footer{
+        margin-top: 80px;
+        width: 100%;
+        padding: 50px 15%;
+        font-size: 15px;
+        background: rgb(245, 234, 220);
         display: flex;
-        padding: 16px;
+        color: black;
+    }
+    .footer div{
+        text-align: center;
+    }
+    .footer div h3{
+        font-family: "Georgia", serif;
+        font-weight: 300;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+    .col-1{
+      flex-grow: 2;
+    }
+    .col-2{
+        flex-grow: 3;
+    }
+    .col-3{
+        flex-grow: 2;
+    }
+    form input{
+        width: 200px;
+        height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline: none;
+        border: 2px solid black;
+    }
+    form button{
+        background: transparent;
+        border: 2px solid black;
+        color: black;
+        border-radius: 30px;
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+    .social-icons{
+        margin-top: 10px;
+        color: #000;
+    }
+    .social-icons i{
+        font-size: 22px;
+        margin: 10px;
+        color: #000;
         cursor: pointer;
-        background-color: rgb(245, 234, 220);
     }
 
-    .accordion-title {
-        flex: 1;
-    }
+/* Contact Page*/
 
-    .accordion-icon {
-        width: 16px;
+    .contact{
+      text-align: center;
+      color: #000;
+      font-size: 25px;
+      padding-top: 25px;
+      font-family: Georgia, serif;
     }
-
-    .accordion-content {
-        padding: 16px;
+    .contacticons{
+      display: block;
+      color: #000;
+      text-decoration: none;
     }
-
-    .accordion-content {
-        display: none;
+    .contacticons i{
+      font-size: 22px;
+      margin: 10px;
+      color: black;
+      cursor: pointer;
     }

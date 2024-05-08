@@ -36,49 +36,8 @@
             Your browser does not support the HTML canvas tag.
         </canvas>
 
-
         <script>
-            function getName() {
-                var name = document.getElementById('name').value;
-                    if (name.trim() === '') {
-                    alert('Please enter a name.');
-                    return;
-                    }
-                var firstPageDiv = document.querySelector('.firstpage');
-                firstPageDiv.innerHTML = "Happy Valentines Day " + name; // When you click the button to submit name, it replace everything inside the div
-                document.body.style.backgroundColor = "white"; // Changes the background color of the page
-                
-                //Creating a heart
-                var canvas = document.getElementById("myCanvas");
-                canvas.style.border = "1px solid #000000";
-                var ctx = canvas.getContext("2d");
-
-                var centerX = canvas.width / 2;
-                var centerY = canvas.height / 2;
-
-                // Draw the left semicircle of the heart top
-                ctx.beginPath();
-                ctx.arc(centerX - 40, centerY - 20, 40, Math.PI, 0); // Arc for left semicircle
-                ctx.stroke();
-
-                // Draw the right semicircle of the heart top
-                ctx.beginPath();
-                ctx.arc(centerX + 40, centerY - 20, 40, Math.PI, 0); // Arc for right semicircle
-                ctx.stroke();
-
-                // Draw a line from top left to bottom center
-                ctx.beginPath();
-                ctx.moveTo(centerX - 80, centerY - 20);
-                ctx.lineTo(centerX, centerY + 80);
-                ctx.stroke();
-
-                // Draw another line from top right to bottom center
-                ctx.beginPath();
-                ctx.moveTo(centerX + 80, centerY - 20);
-                ctx.lineTo(centerX, centerY + 80);
-                ctx.stroke();
-            }
-
+            function getName();
         </script>
 
     </body>
